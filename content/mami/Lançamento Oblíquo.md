@@ -3,6 +3,8 @@ title: Lançamento Oblíquo
 draft: false
 tags: 
 ---
+<script src="./scripts/sketch-1frame.js"></script>
+
 # MRUV
 
 Vamos lá. Antes que possamos fazer lançamentos precisamos criar um movimento retilíneo uniformemente variado, em outras palavras mover um objeto com uma aceleração fixa e uma velocidade variável.
@@ -140,7 +142,7 @@ let velInicial = [0, 0],   //o primeiro membro da array é o valor de x
 
 deve parecer algo assim
 
-<iframe src="htmls/mruv-1frame.html" class="sketch-holder"></iframe>
+<div class="sketch-holder" id="mruv-1frame"></div>
 
 
 ---
@@ -177,8 +179,7 @@ function draw() {
 
 agora você vê um movimento bem mais fluido
 
-<iframe src="htmls/mruv-realtime.html" class="sketch-holder"></iframe>
-
+<div class="sketch-holder" id="mruv-realtime"></div>
 
 ---
 
