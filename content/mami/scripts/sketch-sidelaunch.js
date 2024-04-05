@@ -12,7 +12,7 @@ const mruvsidelaunch = ( p ) => {
 		// comente ou remova a função frameRate();
 	}
 	
-	function draw() {
+	p.draw = function() {
 		p.background(220);
 		deslocam[0] = p.mruv(velInicial[0], accAtual[0], tempo);
 		deslocam[1] = p.height - p.mruv(velInicial[1], accAtual[1], tempo);

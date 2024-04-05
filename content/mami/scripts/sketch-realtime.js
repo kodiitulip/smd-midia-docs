@@ -7,7 +7,7 @@ const mruvreatime = ( p ) => {
 		tempo = 0;
 	
 	p.setup = function() {
-		createCanvas(200, 200);
+		p.createCanvas(200, 200);
 		// frameRate(1);
 		// comente ou remova a função frameRate();
 		
