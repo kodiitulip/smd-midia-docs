@@ -1,7 +1,7 @@
 const mruvsidelaunch = ( p ) => {
 	const INTERVALO_TEMPO = 1/60;
 	
-	let velInicial = [15, 15],   //o primeiro membro da array é o valor de x
+	let velInicial = [22, 45],   //o primeiro membro da array é o valor de x
 		accAtual = [0, -10],     // e o segundo membro é o valor de y
 		deslocam = [0, 0],
 		tempo = 0;
