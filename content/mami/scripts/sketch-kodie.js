@@ -6,7 +6,8 @@ const mruvkodie = ( p ) => {
         acc = [0.0, GRAVITY],
         pos = [0.0, 0.0],
         diameter = 30.0,
-        ang = 0;
+        ang = 0,
+		angTo = 0;
 
     p.preload = function() {
         ball = p.loadImage('./scripts/baby.png');
@@ -40,19 +41,30 @@ const mruvkodie = ( p ) => {
     }
     
     p.hitWall = function() {
+        let hit = false;
+      
         if (pos[0] + diameter / 2 > p.width) {
             vel[0] *= -1;
             pos[0] = p.width - diameter / 2;
+            hit = true;
         } else if (pos[0] - diameter / 2 < 0) {
             vel[0] *= -1;
             pos[0] = diameter / 2;
+            hit = true;
         }
         if (pos[1] + diameter / 2 > p.height) {
             vel[1] *= -1;
             pos[1] = p.height - diameter / 2;
+            hit = true;
         } else if (pos[1] - diameter / 2 < 0) {
             vel[1] *= -1;
             pos[1] = diameter / 2;
+            hit = true;
+        }
+      
+        let v = p.createVector(vel[0], vel[1]);
+        if (hit && p.abs(v.y) > GRAVITY * 5) {
+            angTo += v.heading();
         }
     }
     
@@ -69,8 +81,7 @@ const mruvkodie = ( p ) => {
         pos[0] += vel[0];
         pos[1] += vel[1];
         
-        let v = p.createVector(vel[0], vel[1]);
-        ang = p.lerp(ang, v.heading(), 0.4);
+        ang = p.lerp(ang, angTo, 0.05);
         
         p.drag();
     }
