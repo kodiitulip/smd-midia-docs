@@ -3,6 +3,8 @@ title: Lançamento Oblíquo
 draft: false
 tags: 
 ---
+<script src="../libraries/p5.min.js"></script>
+<script src="../libraries/p5.sound.min.js"></script>
 <script src="./scripts/sketch-1frame.js"></script>
 
 # MRUV

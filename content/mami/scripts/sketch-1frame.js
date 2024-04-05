@@ -8,7 +8,7 @@ const p1frame = ( p ) => {
 		p.createCanvas(200, 200);
 		p.frameRate(1);
 		
-		deslocam = [0, height/2];
+		deslocam = [0, p.height/2];
 	}
 	
 	p.draw = function() {
@@ -21,7 +21,7 @@ const p1frame = ( p ) => {
 		p.circle(deslocam[0], deslocam[1], 10);
 		tempo++;
 		
-		if (deslocam[0] > width) {
+		if (deslocam[0] > p.width) {
 			tempo = 0;
 		}
 	}

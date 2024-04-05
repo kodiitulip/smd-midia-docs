@@ -9,12 +9,13 @@ img[alt~=center] {
 }
 
 .sketch-holder {
-    width: 400px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
     align-content: center;
+    margin: 1rem auto;
 }
 
 iframe[alt~=center] {
