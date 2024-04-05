@@ -150,6 +150,7 @@ deve parecer algo assim
 
 <div class="sketch-holder" id="mruv-1frame"></div>
 
+_(caso as imagens não estejam aparecendo, por favor recarregue a página)_
 
 ---
 # Movimento em tempo real
@@ -186,6 +187,8 @@ function draw() {
 agora você vê um movimento bem mais fluido
 
 <div class="sketch-holder" id="mruv-realtime"></div>
+
+_(caso as imagens não estejam aparecendo, por favor recarregue a página)_
 
 ---
 
@@ -257,6 +260,7 @@ e pronto! essas modificações devem ser suficientes para criar queda livre!
 
 <div class="sketch-holder" id="mruv-freefall"></div>
 
+_(caso as imagens não estejam aparecendo, por favor recarregue a página)_
 
 ---
 
@@ -286,6 +290,7 @@ e pronto! criamos lançamento vertical!
 
 <div class="sketch-holder" id="mruv-verticallaunch"></div>
 
+_(caso as imagens não estejam aparecendo, por favor recarregue a página)_
 
 ---
 
@@ -314,6 +319,7 @@ Prontinho! temos um lançamento em parábola!
 
 <div class="sketch-holder" id="mruv-sidelaunch"></div>
 
+_(caso as imagens não estejam aparecendo, por favor recarregue a página)_
 
 ---
 
@@ -325,5 +331,7 @@ caso você queira algo mais nesse estilo:
 >obs: Tente clicar na tela desse para ver oque acontece ;)
 
 <div class="sketch-holder" id="mruv-kodie"></div>
+
+_(caso as imagens não estejam aparecendo, por favor recarregue a página)_
 
 o código estará nesse [link](https://editor.p5js.org/kodiitulip/sketches/zdM1l3Lwq)

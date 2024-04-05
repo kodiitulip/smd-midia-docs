@@ -14,7 +14,7 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
-    locale: "en-US",
+    locale: "pt-BR",
     baseUrl: "kodiitulip.github.io/smd-midia-docs",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "created",

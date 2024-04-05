@@ -9,7 +9,7 @@ const mruvkodie = ( p ) => {
         ang = 0;
 
     p.preload = function() {
-        ball = p.loadImage('baby.png');
+        ball = p.loadImage('./scripts/baby.png');
     }
     
     p.setup = function() {
