@@ -1,30 +1,28 @@
-const mruvreatime = ( p ) => {
+const mruvsidelaunch = ( p ) => {
 	const INTERVALO_TEMPO = 1/60;
 	
-	let velInicial = [0, 0],   //o primeiro membro da array é o valor de x
-		accAtual = [1, 0],     // e o segundo membro é o valor de y
+	let velInicial = [47, 47],   //o primeiro membro da array é o valor de x
+		accAtual = [0, -10],     // e o segundo membro é o valor de y
 		deslocam = [0, 0],
 		tempo = 0;
 	
 	p.setup = function() {
-		createCanvas(200, 200);
+		p.createCanvas(200, 200);
 		// frameRate(1);
 		// comente ou remova a função frameRate();
-		
-		deslocam = [0, p.height/2];
 	}
 	
-	p.draw = function() {
+	function draw() {
 		p.background(220);
 		deslocam[0] = p.mruv(velInicial[0], accAtual[0], tempo);
-		// deslocam[1] = mruv(velInicial[1], accAtual[1], tempo);
+		deslocam[1] = p.height - p.mruv(velInicial[1], accAtual[1], tempo);
 		/* deslocam[0] -> delocamento no x
 		* deslocam[1] -> deslocameto no y */
 		
 		p.circle(deslocam[0], deslocam[1], 10);
 		tempo += INTERVALO_TEMPO;
 		
-		if (deslocam[0] > p.width) {
+		if (deslocam[1] > p.height + 10 || deslocam[0] > p.width + 10) {
 			tempo = 0;
 		}
 	}
@@ -34,4 +32,4 @@ const mruvreatime = ( p ) => {
 	}
 }
 
-let mruv_realtime = new p5(mruvreatime, "mruv-realtime");
+let mruv_sidelaunch = new p5(mruvsidelaunch, "mruv-sidelaunch");

@@ -3,9 +3,14 @@ title: Lançamento Oblíquo
 draft: false
 tags: 
 ---
-<script src="../libraries/p5.min.js"></script>
-<script src="../libraries/p5.sound.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/addons/p5.sound.min.js"></script>
 <script src="./scripts/sketch-1frame.js"></script>
+<script src="./scripts/sketch-realtime.js"></script>
+<script src="./scripts/sketch-freefall.js"></script>
+<script src="./scripts/sketch-verticallaunch.js"></script>
+<script src="./scripts/sketch-sidelaunch.js"></script>
+<script src="./scripts/sketch-kodie.js"></script>
 
 # MRUV
 
@@ -251,7 +256,7 @@ function draw() {
 
 e pronto! essas modificações devem ser suficientes para criar queda livre!
 
-<iframe src="" class="sketch-holder"></iframe>
+<div class="sketch-holder" id="mruv-freefall"></div>
 
 
 ---
@@ -280,7 +285,7 @@ function draw() {
 
 e pronto! criamos lançamento vertical!
 
-<iframe src="" class="sketch-holder"></iframe>
+<div class="sketch-holder" id="mruv-verticallaunch"></div>
 
 
 ---
@@ -308,7 +313,7 @@ function draw() {
 
 Prontinho! temos um lançamento em parábola!
 
-<iframe src="" class="sketch-holder"></iframe>
+<div class="sketch-holder" id="mruv-sidelaunch"></div>
 
 
 ---
@@ -320,6 +325,6 @@ caso você queira algo mais nesse estilo:
 >[!NOTA]
 >obs: Tente clicar na tela desse para ver oque acontece ;)
 
-<iframe src="" class="sketch-holder"></iframe>
+<div class="sketch-holder" id="mruv-kodie"></div>
 
 o código estará nesse [link](https://editor.p5js.org/kodiitulip/sketches/zdM1l3Lwq)
