@@ -64,7 +64,7 @@ const mruvkodie = ( p ) => {
         pos[1] += vel[1];
         
         let v = p.createVector(vel[0], vel[1]);
-        ang = v.heading();
+        ang = p.lerp(ang, v.heading(), 0.4);
         
         p.drag();
     }

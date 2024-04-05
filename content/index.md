@@ -11,3 +11,6 @@ Nesse site você poderá encontrar todos os documentos feitos por mim _(Kodie)_ 
 	- [[Lançamento Oblíquo]]
 
 ---
+
+
+<a href="https://www.flaticon.com/free-icons/book" title="book icons">Book icons created by Smashicons - Flaticon</a>
