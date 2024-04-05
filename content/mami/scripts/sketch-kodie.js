@@ -1,11 +1,16 @@
 const mruvkodie = ( p ) => {
     const GRAVITY = 0.1;
+    let ball;
     
     let vel = [5.0, 5.0],
         acc = [0.0, GRAVITY],
         pos = [0.0, 0.0],
         diameter = 30.0,
         ang = 0;
+
+    p.preload = function() {
+        ball = p.loadImage('baby.png');
+    }
     
     p.setup = function() {
         p.createCanvas(200, 200);
@@ -27,8 +32,9 @@ const mruvkodie = ( p ) => {
         p.push();
         p.translate(pos[0], pos[1]);
         p.rotate(ang);
-        p.rect(-diameter / 2, -diameter / 2, diameter);
-        // circle(pos[0], pos[1], diameter);
+        // p.rect(-diameter / 2, -diameter / 2, diameter);
+        // p.circle(pos[0], pos[1], diameter);
+        p.image(ball, -diameter/2, -diameter/2, diameter, diameter);
         p.translate(-pos[0], -pos[1]);
         p.pop();
     }
