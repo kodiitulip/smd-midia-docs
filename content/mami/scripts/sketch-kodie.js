@@ -70,7 +70,11 @@ const mruvkodie = ( p ) => {
     }
     
     p.moveCircleWithMouse = function() {
-        if (p.mouseIsPressed) {
+        let mouseInCanvas = p.mouseX > 0 &&
+                            p.mouseX < p.width &&
+                            p.mouseY > 0 &&
+                            p.mouseY < p.height;
+        if (p.mouseIsPressed && mouseInCanvas) {
             pos[0] = p.lerp(
                 pos[0],
                 p.constrain(p.mouseX, 0, p.width - diameter / 2),
