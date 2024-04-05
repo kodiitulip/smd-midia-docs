@@ -8,12 +8,13 @@ img[alt~=center] {
     margin: 1rem auto;
 }
 
-iframe[alt~=center_square] {
+.sketch-holder {
     width: 400px;
     height: 400px;
     border-radius: 5px;
-    display: block;
-    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 iframe[alt~=center] {
