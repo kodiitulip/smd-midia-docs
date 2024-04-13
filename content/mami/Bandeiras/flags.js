@@ -1,6 +1,12 @@
 const flagsrect = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
+        let ratio = p.height / p.width;
+        let element = document.getElementById('flags-rect');
+        let style = window.getComputedStyle(element);
+        let newwidth = style.getPropertyValue('width');
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
         p.drawFlag();
     };
@@ -22,6 +28,12 @@ const flagsrect = ( p ) => {
 const flagscircle = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
+        let ratio = p.height / p.width;
+        let element = document.getElementById('flags-circle');
+        let style = window.getComputedStyle(element);
+        let newwidth = style.getPropertyValue('width');
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
         p.drawFlag();
     };
@@ -46,6 +58,12 @@ const flagscircle = ( p ) => {
 const flagsparam = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
+        let ratio = p.height / p.width;
+        let element = document.getElementById('flags-param');
+        let style = window.getComputedStyle(element);
+        let newwidth = style.getPropertyValue('width');
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
         p.drawFlag(250, 200, 300);
     };
@@ -70,6 +88,12 @@ const flagsparam = ( p ) => {
 const flagstomany = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
+        let ratio = p.height / p.width;
+        let element = document.getElementById('flags-tomany');
+        let style = window.getComputedStyle(element);
+        let newwidth = style.getPropertyValue('width');
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
@@ -98,6 +122,12 @@ const flagstomany = ( p ) => {
 const flagsfinal = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
+        let ratio = p.height / p.width;
+        let element = document.getElementById('flags-final');
+        let style = window.getComputedStyle(element);
+        let newwidth = style.getPropertyValue('width');
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
     };
 
     p.draw = function() {
@@ -126,6 +156,12 @@ const flagsfinal = ( p ) => {
 const flagsfinalnoloop = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
+        let ratio = p.height / p.width;
+        let element = document.getElementById('flags-finalnoloop');
+        let style = window.getComputedStyle(element);
+        let newwidth = style.getPropertyValue('width');
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
