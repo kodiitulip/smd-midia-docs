@@ -98,7 +98,7 @@ const flagsparam = ( p ) => {
 
     p.draw = () => {
         p.background(220);
-        p.drawFlag(0.3125 * p.width, 0.25 * p.width, 0.375 * p.width);
+        p.drawFlag(0.3125 * p.width, 0.25 * p.width, 0.0375 * p.width);
     }
 
     p.drawFlag = function(x, y, largura) {
@@ -143,7 +143,7 @@ const flagstomany = ( p ) => {
                 p.drawFlag(
                     0.25 * p.width + i * 0.05 * p.width,
                     0.125 * p.width + j * 0.05 * p.width,
-                    0.375 * p.width
+                    0.0375 * p.width
                 );
             }
         }
@@ -193,7 +193,7 @@ const flagsfinal = ( p ) => {
                     0.125 * p.width + j * 0.05 * p.width,
                     p.random(
                         3,
-                        0.375 * p.width
+                        0.0375 * p.width
                     )
                 );
             }
@@ -244,7 +244,7 @@ const flagsfinalnoloop = ( p ) => {
                     0.125 * p.width + j * 0.05 * p.width,
                     p.random(
                         3,
-                        0.375 * p.width
+                        0.0375 * p.width
                     )
                 );
             }
