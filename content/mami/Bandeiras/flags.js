@@ -1,7 +1,8 @@
 const flagsrect = ( p ) => {
+    const ratio = 600 / 800;
+
     p.setup = function() {
         p.createCanvas(800, 600);
-        let ratio = p.height / p.width;
         let element = document.getElementById('flags-rect');
         let style = window.getComputedStyle(element);
         let stylew = style.getPropertyValue('width');
@@ -10,6 +11,15 @@ const flagsrect = ( p ) => {
         p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
         p.drawFlag();
+    };
+
+    p.windowResized = function() {
+        let element = document.getElementById('flags-rect');
+        let style = window.getComputedStyle(element);
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
     };
 
     p.draw = function() {
@@ -23,13 +33,14 @@ const flagsrect = ( p ) => {
 
         p.fill(255);
         p.rect(0, 0, larg, altu);
-    }
+    };
 }
 
 const flagscircle = ( p ) => {
+    const ratio = 600 / 800;
+
     p.setup = function() {
         p.createCanvas(800, 600);
-        let ratio = p.height / p.width;
         let element = document.getElementById('flags-circle');
         let style = window.getComputedStyle(element);
         let stylew = style.getPropertyValue('width');
@@ -40,7 +51,13 @@ const flagscircle = ( p ) => {
         p.drawFlag();
     };
 
-    p.draw = function() {
+    p.windowResized = function() {
+        let element = document.getElementById('flags-circle');
+        let style = window.getComputedStyle(element);
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
     };
 
     p.drawFlag = function() {
@@ -54,13 +71,14 @@ const flagscircle = ( p ) => {
         p.rect(0, 0, larg, altu);
         p.fill('#BC002D');
         p.circle(larg / 2, altu / 2, 1.2 * modu);
-    }
+    };
 }
 
 const flagsparam = ( p ) => {
+    const ratio = 600 / 800;
+
     p.setup = function() {
         p.createCanvas(800, 600);
-        let ratio = p.height / p.width;
         let element = document.getElementById('flags-param');
         let style = window.getComputedStyle(element);
         let stylew = style.getPropertyValue('width');
@@ -71,7 +89,13 @@ const flagsparam = ( p ) => {
         p.drawFlag(250, 200, 300);
     };
 
-    p.draw = function() {
+    p.windowResized = function() {
+        let element = document.getElementById('flags-param');
+        let style = window.getComputedStyle(element);
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
     };
 
     p.drawFlag = function(x, y, largura) {
@@ -85,13 +109,14 @@ const flagsparam = ( p ) => {
         p.rect(x, y, larg, altu);
         p.fill('#BC002D');
         p.circle(x + larg / 2, y + altu / 2, 1.2 * modu);
-    }
+    };
 }
 
 const flagstomany = ( p ) => {
+    const ratio = 600 / 800;
+
     p.setup = function() {
         p.createCanvas(800, 600);
-        let ratio = p.height / p.width;
         let element = document.getElementById('flags-tomany');
         let style = window.getComputedStyle(element);
         let stylew = style.getPropertyValue('width');
@@ -106,7 +131,13 @@ const flagstomany = ( p ) => {
         }
     };
 
-    p.draw = function() {
+    p.windowResized = function() {
+        let element = document.getElementById('flags-tomany');
+        let style = window.getComputedStyle(element);
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
     };
 
     p.drawFlag = function(x, y, largura) {
@@ -120,13 +151,23 @@ const flagstomany = ( p ) => {
         p.rect(x, y, larg, altu);
         p.fill('#BC002D');
         p.circle(x + larg / 2, y + altu / 2, 1.2 * modu);
-    }
+    };
 }
 
 const flagsfinal = ( p ) => {
+    const ratio = 600 / 800;
+
     p.setup = function() {
         p.createCanvas(800, 600);
-        let ratio = p.height / p.width;
+        let element = document.getElementById('flags-final');
+        let style = window.getComputedStyle(element);
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
+    };
+
+    p.windowResized = function() {
         let element = document.getElementById('flags-final');
         let style = window.getComputedStyle(element);
         let stylew = style.getPropertyValue('width');
@@ -155,13 +196,14 @@ const flagsfinal = ( p ) => {
         p.rect(x, y, larg, altu);
         p.fill('#BC002D');
         p.circle(x + larg / 2, y + altu / 2, 1.2 * modu);
-    }
+    };
 }
 
 const flagsfinalnoloop = ( p ) => {
+    const ratio = 600 / 800;
+
     p.setup = function() {
         p.createCanvas(800, 600);
-        let ratio = p.height / p.width;
         let element = document.getElementById('flags-finalnoloop');
         let style = window.getComputedStyle(element);
         let stylew = style.getPropertyValue('width');
@@ -176,8 +218,13 @@ const flagsfinalnoloop = ( p ) => {
         }
     };
 
-    p.draw = function() {
-        
+    p.windowResized = function() {
+        let element = document.getElementById('flags-finalnoloop');
+        let style = window.getComputedStyle(element);
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
+
+        p.resizeCanvas(newwidth, newwidth * ratio);
     };
 
     p.drawFlag = function(x, y, largura) {
@@ -191,7 +238,7 @@ const flagsfinalnoloop = ( p ) => {
         p.rect(x, y, larg, altu);
         p.fill('#BC002D');
         p.circle(x + larg / 2, y + altu / 2, 1.2 * modu);
-    }
+    };
 }
 
 let flagsRect = new p5(flagsrect, "flags-rect");
