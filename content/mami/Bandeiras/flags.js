@@ -114,10 +114,10 @@ const flagsparam = ( p ) => {
 
 const flagstomany = ( p ) => {
     const ratio = 600 / 800;
-    const marginx = 0.25 * p.width;
-    const marginy = 0.125 * p.width;
-    const grids = 0.05 * p.width;
-    const flags = 0.375 * p.width;
+    let marginx;
+    let marginy;
+    let grids;
+    let flags;
 
     p.setup = function() {
         p.createCanvas(800, 600);
@@ -127,6 +127,10 @@ const flagstomany = ( p ) => {
         let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
+        marginx = 0.25 * p.width;
+        marginy = 0.125 * p.width;
+        grids = 0.05 * p.width;
+        flags = 0.375 * p.width;
         p.background(220);
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
@@ -142,6 +146,10 @@ const flagstomany = ( p ) => {
         let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
+        marginx = 0.25 * p.width;
+        marginy = 0.125 * p.width;
+        grids = 0.05 * p.width;
+        flags = 0.375 * p.width;
     };
 
     p.drawFlag = function(x, y, largura) {
@@ -160,11 +168,10 @@ const flagstomany = ( p ) => {
 
 const flagsfinal = ( p ) => {
     const ratio = 600 / 800;
-    const marginx = 0.25 * p.width;
-    const marginy = 0.125 * p.width;
-    const grids = 0.05 * p.width;
-    const flags = 0.375 * p.width;
-    const flagsm = 0.00625 * p.width;
+    let marginx;
+    let marginy;
+    let grids;
+    let flags;
 
     p.setup = function() {
         p.createCanvas(800, 600);
@@ -174,6 +181,11 @@ const flagsfinal = ( p ) => {
         let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
+        marginx = 0.25 * p.width;
+        marginy = 0.125 * p.width;
+        grids = 0.05 * p.width;
+        flags = 0.375 * p.width;
+        flagsm = 0.00625 * p.width;
     };
 
     p.windowResized = function() {
@@ -183,6 +195,10 @@ const flagsfinal = ( p ) => {
         let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
+        marginx = 0.25 * p.width;
+        marginy = 0.125 * p.width;
+        grids = 0.05 * p.width;
+        flags = 0.375 * p.width;
     };
 
     p.draw = function() {
@@ -210,11 +226,11 @@ const flagsfinal = ( p ) => {
 
 const flagsfinalnoloop = ( p ) => {
     const ratio = 600 / 800;
-    const marginx = 0.25 * p.width;
-    const marginy = 0.125 * p.width;
-    const grids = 0.05 * p.width;
-    const flags = 0.375 * p.width;
-    const flagsm = 0.00625 * p.width;
+    let marginx;
+    let marginy;
+    let grids;
+    let flags;
+    let flagsm;
 
     p.setup = function() {
         p.createCanvas(800, 600);
@@ -224,6 +240,10 @@ const flagsfinalnoloop = ( p ) => {
         let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
+        marginx = 0.25 * p.width;
+        marginy = 0.125 * p.width;
+        grids = 0.05 * p.width;
+        flags = 0.375 * p.width;
         p.background(220);
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
@@ -239,6 +259,10 @@ const flagsfinalnoloop = ( p ) => {
         let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
+        marginx = 0.25 * p.width;
+        marginy = 0.125 * p.width;
+        grids = 0.05 * p.width;
+        flags = 0.375 * p.width;
     };
 
     p.drawFlag = function(x, y, largura) {
