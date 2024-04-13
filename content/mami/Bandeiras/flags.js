@@ -86,7 +86,7 @@ const flagsparam = ( p ) => {
 
         p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
-        p.drawFlag(250, 200, 300);
+        p.drawFlag(0.3125 * p.width, 0.25 * p.width, 0.375 * p.width);
     };
 
     p.windowResized = function() {
