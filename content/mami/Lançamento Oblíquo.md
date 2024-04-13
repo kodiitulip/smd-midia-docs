@@ -5,6 +5,8 @@ tags:
 ---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
 <script src="./MRUV/mruv.js"></script>
+<script src="./MRUV/mruv-time.js"></script>
+<script src="./MRUV/mruv-kodie.js"></script>
 
 # MRUV
 
