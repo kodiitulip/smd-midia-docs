@@ -1,11 +1,11 @@
 const flagsrect = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
+        p.background(220);
+        p.drawFlag();
     };
 
     p.draw = function() {
-        p.background(220);
-        p.drawFlag();
     };
 
     p.drawFlag = function() {
@@ -22,11 +22,11 @@ const flagsrect = ( p ) => {
 const flagscircle = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
+        p.background(220);
+        p.drawFlag();
     };
 
     p.draw = function() {
-        p.background(220);
-        p.drawFlag();
     };
 
     p.drawFlag = function() {
@@ -46,11 +46,11 @@ const flagscircle = ( p ) => {
 const flagsparam = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
+        p.background(220);
+        p.drawFlag(250, 200, 300);
     };
 
     p.draw = function() {
-        p.background(220);
-        p.drawFlag(250, 200, 300);
     };
 
     p.drawFlag = function(x, y, largura) {
@@ -70,15 +70,15 @@ const flagsparam = ( p ) => {
 const flagstomany = ( p ) => {
     p.setup = function() {
         p.createCanvas(800, 600);
-    };
-
-    p.draw = function() {
         p.background(220);
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
                 p.drawFlag(200 + i * 40, 100 + j * 40, 30);
             }
         }
+    };
+
+    p.draw = function() {
     };
 
     p.drawFlag = function(x, y, largura) {
