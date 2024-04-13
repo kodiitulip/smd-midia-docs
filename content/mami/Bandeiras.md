@@ -25,8 +25,12 @@ Essas unidades permitem que possamos utilizar qualquer largura de bandeira e nos
 
 Digamos que eu queira fazer uma bandeira de 120 cm de largura usando esse design.  
 1. Primeiro descobrimos o valor de um módulo:
-$$ Módulo = 120cm / 3u $$
-$$ Módulo = 40cm $$
+$$
+	Módulo = 120cm / 3u 
+$$
+$$
+	Módulo = 40cm 
+$$
 
 2. Agora que sabemos o valor de 1 módulo (_ou 1u_) podemos então multiplicar esse valor de 1 módulo pelos valores no design original.
 
