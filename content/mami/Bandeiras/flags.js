@@ -2,22 +2,7 @@ const ratio = 600 / 800;
 
 const flagsrect = ( p ) => {
     p.setup = function() {
-        p.createCanvas(800, 600);
-        let element = document.getElementById('flags-rect');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
-    };
-
-    p.windowResized = function() {
-        let element = document.getElementById('flags-rect');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
+        p.createCanvas(480, 360);
     };
 
     p.draw = function() {
@@ -38,22 +23,7 @@ const flagsrect = ( p ) => {
 
 const flagscircle = ( p ) => {
     p.setup = function() {
-        p.createCanvas(800, 600);
-        let element = document.getElementById('flags-circle');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
-    };
-
-    p.windowResized = function() {
-        let element = document.getElementById('flags-circle');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
+        p.createCanvas(480, 360);
     };
 
     p.draw = () => {
@@ -77,28 +47,12 @@ const flagscircle = ( p ) => {
 
 const flagsparam = ( p ) => {
     p.setup = function() {
-        p.createCanvas(800, 600);
-        let element = document.getElementById('flags-param');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
-        
-    };
-
-    p.windowResized = function() {
-        let element = document.getElementById('flags-param');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
+        p.createCanvas(480, 360);
     };
 
     p.draw = () => {
         p.background(220);
-        p.drawFlag(0.3125 * p.width, 0.25 * p.width, 0.0375 * p.width);
+        p.drawFlag(150, 120, 18);
     }
 
     p.drawFlag = function(x, y, largura) {
@@ -117,23 +71,7 @@ const flagsparam = ( p ) => {
 
 const flagstomany = ( p ) => {
     p.setup = function() {
-        p.createCanvas(800, 600);
-        let element = document.getElementById('flags-tomany');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
-        
-    };
-
-    p.windowResized = function() {
-        let element = document.getElementById('flags-tomany');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
+        p.createCanvas(480, 360);
     };
 
     p.draw = () => {
@@ -141,9 +79,9 @@ const flagstomany = ( p ) => {
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
                 p.drawFlag(
-                    0.25 * p.width + i * 0.05 * p.width,
-                    0.125 * p.width + j * 0.05 * p.width,
-                    0.0375 * p.width
+                    120 + i * 24,
+                    60 + j * 24,
+                    18
                 );
             }
         }
@@ -166,22 +104,7 @@ const flagstomany = ( p ) => {
 const flagsfinal = ( p ) => {
 
     p.setup = function() {
-        p.createCanvas(800, 600);
-        let element = document.getElementById('flags-final');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
-    };
-
-    p.windowResized = function() {
-        let element = document.getElementById('flags-final');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
+        p.createCanvas(480, 360);
     };
 
     p.draw = function() {
@@ -189,11 +112,11 @@ const flagsfinal = ( p ) => {
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
                 p.drawFlag(
-                    0.25 * p.width + i * 0.05 * p.width,
-                    0.125 * p.width + j * 0.05 * p.width,
+                    120 + i * 24,
+                    60 + j * 24,
                     p.random(
                         3,
-                        0.0375 * p.width
+                        18
                     )
                 );
             }
@@ -216,23 +139,8 @@ const flagsfinal = ( p ) => {
 
 const flagsfinalnoloop = ( p ) => {
     p.setup = function() {
-        p.createCanvas(800, 600);
-        let element = document.getElementById('flags-finalnoloop');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
+        p.createCanvas(480, 360);
         p.noLoop();
-    };
-
-    p.windowResized = function() {
-        let element = document.getElementById('flags-finalnoloop');
-        let style = window.getComputedStyle(element);
-        let stylew = style.getPropertyValue('width');
-        let newwidth = p.int(stylew.replace('px',''));
-
-        p.resizeCanvas(newwidth, newwidth * ratio);
     };
 
     p.draw = () => {
@@ -240,11 +148,11 @@ const flagsfinalnoloop = ( p ) => {
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
                 p.drawFlag(
-                    0.25 * p.width + i * 0.05 * p.width,
-                    0.125 * p.width + j * 0.05 * p.width,
+                    120 + i * 24,
+                    60 + j * 24,
                     p.random(
                         3,
-                        0.0375 * p.width
+                        18
                     )
                 );
             }
