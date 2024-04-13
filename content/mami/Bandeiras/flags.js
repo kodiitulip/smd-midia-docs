@@ -114,6 +114,10 @@ const flagsparam = ( p ) => {
 
 const flagstomany = ( p ) => {
     const ratio = 600 / 800;
+    const marginx = 0.25 * p.width;
+    const marginy = 0.125 * p.width;
+    const grids = 0.05 * p.width;
+    const flags = 0.375 * p.width;
 
     p.setup = function() {
         p.createCanvas(800, 600);
@@ -126,7 +130,7 @@ const flagstomany = ( p ) => {
         p.background(220);
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
-                p.drawFlag(200 + i * 40, 100 + j * 40, 30);
+                p.drawFlag(marginx + i * grids, marginy + j * grids, flags);
             }
         }
     };
@@ -156,6 +160,11 @@ const flagstomany = ( p ) => {
 
 const flagsfinal = ( p ) => {
     const ratio = 600 / 800;
+    const marginx = 0.25 * p.width;
+    const marginy = 0.125 * p.width;
+    const grids = 0.05 * p.width;
+    const flags = 0.375 * p.width;
+    const flagsm = 0.00625 * p.width;
 
     p.setup = function() {
         p.createCanvas(800, 600);
@@ -180,7 +189,7 @@ const flagsfinal = ( p ) => {
         p.background(220);
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
-                p.drawFlag(200 + i * 40, 100 + j * 40, p.random(5, 30));
+                p.drawFlag(marginx + i * grids, marginy + j * grids, p.random(flagsm, flags));
             }
         }
     };
@@ -201,6 +210,11 @@ const flagsfinal = ( p ) => {
 
 const flagsfinalnoloop = ( p ) => {
     const ratio = 600 / 800;
+    const marginx = 0.25 * p.width;
+    const marginy = 0.125 * p.width;
+    const grids = 0.05 * p.width;
+    const flags = 0.375 * p.width;
+    const flagsm = 0.00625 * p.width;
 
     p.setup = function() {
         p.createCanvas(800, 600);
@@ -213,7 +227,7 @@ const flagsfinalnoloop = ( p ) => {
         p.background(220);
         for (let i = 0; i < 10; i++) {
             for (let j = 0; j < 10; j++) {
-                p.drawFlag( 200 + i * 40, 100 + j * 40, p.random(5, 30));
+                p.drawFlag(marginx + i * grids, marginy + j * grids, p.random(flagsm, flags));
             }
         }
     };
