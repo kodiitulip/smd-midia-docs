@@ -4,12 +4,7 @@ draft: false
 tags: 
 ---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
-<script src="./scripts/sketch-1frame.js"></script>
-<script src="./scripts/sketch-realtime.js"></script>
-<script src="./scripts/sketch-freefall.js"></script>
-<script src="./scripts/sketch-verticallaunch.js"></script>
-<script src="./scripts/sketch-sidelaunch.js"></script>
-<script src="./scripts/sketch-kodie.js"></script>
+<script src="./MRUV/mruv.js"></script>
 
 # MRUV
 

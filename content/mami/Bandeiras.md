@@ -1,3 +1,8 @@
+---
+title: Bandeiras
+draft: false
+tags: 
+---
 <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
 <script src="./Bandeiras/flags.js"></script>
 
