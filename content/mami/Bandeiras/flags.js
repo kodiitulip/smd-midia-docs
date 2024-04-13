@@ -4,7 +4,8 @@ const flagsrect = ( p ) => {
         let ratio = p.height / p.width;
         let element = document.getElementById('flags-rect');
         let style = window.getComputedStyle(element);
-        let newwidth = style.getPropertyValue('width');
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
@@ -31,7 +32,8 @@ const flagscircle = ( p ) => {
         let ratio = p.height / p.width;
         let element = document.getElementById('flags-circle');
         let style = window.getComputedStyle(element);
-        let newwidth = style.getPropertyValue('width');
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
@@ -61,7 +63,8 @@ const flagsparam = ( p ) => {
         let ratio = p.height / p.width;
         let element = document.getElementById('flags-param');
         let style = window.getComputedStyle(element);
-        let newwidth = style.getPropertyValue('width');
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
@@ -91,7 +94,8 @@ const flagstomany = ( p ) => {
         let ratio = p.height / p.width;
         let element = document.getElementById('flags-tomany');
         let style = window.getComputedStyle(element);
-        let newwidth = style.getPropertyValue('width');
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
@@ -125,7 +129,8 @@ const flagsfinal = ( p ) => {
         let ratio = p.height / p.width;
         let element = document.getElementById('flags-final');
         let style = window.getComputedStyle(element);
-        let newwidth = style.getPropertyValue('width');
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
     };
@@ -159,7 +164,8 @@ const flagsfinalnoloop = ( p ) => {
         let ratio = p.height / p.width;
         let element = document.getElementById('flags-finalnoloop');
         let style = window.getComputedStyle(element);
-        let newwidth = style.getPropertyValue('width');
+        let stylew = style.getPropertyValue('width');
+        let newwidth = p.int(stylew.replace('px',''));
 
         p.resizeCanvas(newwidth, newwidth * ratio);
         p.background(220);
