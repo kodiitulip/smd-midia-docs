@@ -52,7 +52,7 @@ const flagsparam = ( p ) => {
 
     p.draw = () => {
         p.background(220);
-        p.drawFlag(150, 120, 18);
+        p.drawFlag(150, 120, 180);
     }
 
     p.drawFlag = function(x, y, largura) {
