@@ -1,4 +1,4 @@
-const exec1_6 = ( p ) => {
+const execgeo = ( p ) => {
     let geo = 0;
     
     p.setup = () => {
@@ -57,4 +57,4 @@ const exec1_6 = ( p ) => {
     }
 }
 
-let exec1Q6 = new p5(exec1_6, "exec1-q6");
+let execGeo = new p5(execgeo, "exec-geo");

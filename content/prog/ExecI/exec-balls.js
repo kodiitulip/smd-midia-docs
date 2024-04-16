@@ -1,4 +1,4 @@
-const exec1_5 = ( p ) => {
+const execballs = ( p ) => {
     let balls = [];
     
     p.setup = () => {
@@ -60,4 +60,4 @@ const exec1_5 = ( p ) => {
     }
 }
 
-let exec1Q5 = new p5(exec1_5, "exec1-q5");
+let execBalls = new p5(execballs, "exec-balls");
