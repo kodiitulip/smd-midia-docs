@@ -9,7 +9,7 @@ Nesse site você poderá encontrar todos os documentos feitos por mim _(Kodie)_ 
 # Explorer
 
 - Mami
-	- [[lançamento-obliquo|Lançamento Oblíquo]]
+	- [[lancamento-obliquo|Lançamento Oblíquo]]
 	- [[bandeiras|Bandeiras]]
 - Prog
 	- [[lista-de-exercicios-i |Lista de Exercícios I]]
