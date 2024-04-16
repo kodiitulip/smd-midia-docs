@@ -6,6 +6,7 @@ tags:
 ---
 <script src="./ExecI/exec-balls.js"></script>
 <script src="./ExecI/exec-geo.js"></script>
+<script src="./ExecI/exec-stars.js"></script>
 
 # Lista de atividades Programação:
 
