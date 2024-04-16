@@ -21,14 +21,14 @@
 		"prefix": "sketch",
 		"body": [
 			"const ${1:sketchName} = ( p ) => {",
-			"\tp.setup = function() {",
+			"\tp.setup = () => {",
 			"\t\tp.createCanvas(400, 400);",
 			"\t};\n",
-			"\tp.draw = function() {",
+			"\tp.draw = () => {",
 			"\t\tp.background(220);",
 			"\t};",
 			"}",
-			"\nlet ${2:canvasName} = new p5(${1:sketchName});",
+			"\nlet ${2:canvasName} = new p5(${1:sketchName}, ${0:\"HTMLNode\"});",
 		]
 	}
 }
