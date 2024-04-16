@@ -19,6 +19,7 @@ import DesktopOnly from "./DesktopOnly"
 import MobileOnly from "./MobileOnly"
 import RecentNotes from "./RecentNotes"
 import Breadcrumbs from "./Breadcrumbs"
+import P5JsInitializer from "./P5Js"
 
 export {
   ArticleTitle,
@@ -42,4 +43,5 @@ export {
   RecentNotes,
   NotFound,
   Breadcrumbs,
+  P5JsInitializer,
 }

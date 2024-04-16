@@ -14,13 +14,18 @@ img[alt~=center] {
     justify-content: center;
     align-content: center;
     margin: 1rem auto;
+    min-height: min-content;
+    min-width: min-content;
 }
 
-iframe[alt~=center] {
-    max-width: 100%;
+.sketch-frame {
     border-radius: 5px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-content: center;
     margin: 1rem auto;
+    min-height: min-content;
+    min-width: min-content;
 }
 
 .p5Canvas{

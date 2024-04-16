@@ -4,10 +4,12 @@ import * as Component from "./quartz/components"
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
-  header: [],
+  header: [
+    Component.P5JsInitializer(),
+  ],
   footer: Component.Footer({
     links: {
-      GitHub: "https://github.com/kodiitulip/smd-docs",
+      GitHub: "https://github.com/kodiitulip/smd-midia-docs",
     },
   }),
 }

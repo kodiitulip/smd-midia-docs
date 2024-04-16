@@ -1,9 +1,10 @@
 ---
 title: Lançamento Oblíquo
+description: Um documento descrevendo a criação de uma aplicação usando o movimento uniformemente variado
 draft: false
 tags: 
 ---
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.1/p5.js"></script>
+
 <script src="./MRUV/mruv.js"></script>
 <script src="./MRUV/mruv-time.js"></script>
 <script src="./MRUV/mruv-kodie.js"></script>
@@ -17,7 +18,7 @@ Vamos lá. Antes que possamos fazer lançamentos precisamos criar um movimento r
 a formula matemática para conseguir o _deslocamento_ (∆s) a partir da velocidade, aceleração e o tempo é a seguinte:
 
 $$
-	∆s = Vot + at^2 / 2
+	Deslocamento = Vot + at^2 / 2
 $$
 
 agora devemos passar isso para o modo computacional - _aproveitaremos e passaremos como uma função_
@@ -76,7 +77,7 @@ function draw() {
 o deslocamento de um ponto pode ser vista como a mudança de sua posição
 
 $$
-	∆s = Pf - Po
+	Deslocamento = Pf - Po
 $$
 
 porém como não temos uma posição final fixa precisamos usar a fórmula com aceleração e velocidade mostrada antes
