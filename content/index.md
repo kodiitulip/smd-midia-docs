@@ -10,7 +10,7 @@ Nesse site você poderá encontrar todos os documentos feitos por mim _(Kodie)_ 
 
 - Mami
 	- [[lancamento-obliquo|Lançamento Oblíquo]]
-	- [[bandeiras|Bandeiras]]
+	- [[bandeira-japao|Bandeira Japão]]
 - Prog
 	- [[lista-de-exercicios-i |Lista de Exercícios I]]
 
