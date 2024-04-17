@@ -1,10 +1,9 @@
 ---
 title: Bandeiras
-description: Um documento descrevendo o processo de criação de uma aplicação que desenha bandeiras do japão com proporções adequadas
+description: Um documento descrevendo o processo de criação de uma aplicação que desenha bandeiras do Japão com proporções adequadas
 draft: false
-tags: 
+tags:
 ---
-
 <script src="./Bandeiras/flags.js"></script>
 
 # O Objetivo
