@@ -26,26 +26,21 @@ const execstars = ( p ) => {
 			this.size = size;
 			this.lifetime = p.random(0, 1.5);
 			this.maxLifetime = p.PI;
-			this.color = p.color(
-				'rgba('+
-				p.random(128,256)+','+
-				p.random(128,256)+','+
-				p.random(128,256)+','+
-				0+')'
-			);
+			this.c = [
+				p.random(128,256), 
+				p.random(128,256), 
+				p.random(128,256),
+				0,
+			];
 		}
 		
 		tick() {
 			this.lifetime += 0.08;
-			this.color = p.color(
-				'rgba(255,255,255,' + 
-				p.abs(
-					p.sin(this.lifetime) * 1
-				) + 
-				')'
-			)
+			this.c[3] = p.abs(p.sin(this.lifetime) * 256);
 			p.noStroke();
-			p.fill(this.color);
+			p.fill(
+				this.c
+			);
 			p.circle(this.x, this.y, this.size);
 			if (this.isDead()) {
 				this.regen(
