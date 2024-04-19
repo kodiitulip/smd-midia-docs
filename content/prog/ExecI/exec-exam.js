@@ -38,6 +38,21 @@ const execexam = ( p ) => {
         if (!pressedInCanvas) {
             return false;
         }
+
+		menorNotas = {
+            1: 0,
+            2: 0,
+            3: 0,
+        };
+
+		for (let i = 0; i < 10; i++) {
+			alun[i] = new StudentInfo(
+				i + 1,
+				Math.random() * 10,
+				Math.random() * 10,
+				Math.random() * 10
+			)
+		}
     }
 
 	p.mousePressed = () => {
