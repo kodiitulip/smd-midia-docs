@@ -7,6 +7,8 @@ tags:
 <script src="./ExecI/exec-balls.js"></script>
 <script src="./ExecI/exec-geo.js"></script>
 <script src="./ExecI/exec-stars.js"></script>
+<script src="./ExecI/exec-fibonacci.js"></script>
+<script src="./ExecI/exec-exam.js"></script>
 
 # Lista de atividades Programação:
 
@@ -63,4 +65,17 @@ circle(), ellipse(), arc()
 >Desenvolva um programa para criar uma representação de um céu noturno estrelado, onde estrelas e bolinhas são exibidas. Utilize vetores para armazenar as coordenadas de cada forma, garantindo que sejam geradas aleatoriamente.
 
 <div class="sketch-holder" id="exec-stars"></div>
+
+## 8. Fibonacci
+
+>Utilizando estruturas de repetição, faça um programa que imprima n números da sequência de Fibonacci, onde n é a quantidade de termos que deve ser informada pelo usuário
+
+<div class="sketch-holder" id="exec-fibonacci"></div>
+
+## 9. Notas
+>Um professor decidiu criar um programa em que possa inserir as notas de seus alunos em uma matrix 10 x 3, onde cada linha representa um aluno e cada coluna representa uma prova.
+>O próprio programa insere as notas e, depois, deve gerar um relatório detalhado indicando, para cada aluno, em qual prova ele obteve a menor nota e qual sua média final.
+>Além disso, ao final do relatório, o sistema deve fornecer informações sobre quantos alunos tiveram a menor nota em cada uma das 3 provas.
+
+<div class="sketch-holder" id="exec-exam"></div>
 

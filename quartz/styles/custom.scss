@@ -8,7 +8,7 @@ img[alt~=center] {
     margin: 1rem auto;
 }
 
-.sketch-holder {
+.sketch-frame {
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -18,7 +18,7 @@ img[alt~=center] {
     min-width: min-content;
 }
 
-.sketch-frame {
+.sketch-holder {
     border-radius: 5px;
     display: flex;
     justify-content: center;
