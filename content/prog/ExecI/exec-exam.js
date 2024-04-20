@@ -29,47 +29,22 @@ const execexam = ( p ) => {
 			p.height * 11/12
 		);
 	};
-
-	p.touchStarted = () => {
-        let pressedInCanvas = p.mouseX > 0 &&
-                            p.mouseX < p.width &&
-                            p.mouseY > 0 &&
-                            p.mouseY < p.height;
-        if (!pressedInCanvas) {
-            return false;
-        }
-
-		menorNotas = {
-            1: 0,
-            2: 0,
-            3: 0,
-        };
-
-		for (let i = 0; i < 10; i++) {
-			alun[i] = new StudentInfo(
-				i + 1,
-				Math.random() * 10,
-				Math.random() * 10,
-				Math.random() * 10
-			)
-		}
-    }
-
+	
 	p.mousePressed = () => {
-        let pressedInCanvas = p.mouseX > 0 &&
-                            p.mouseX < p.width &&
-                            p.mouseY > 0 &&
-                            p.mouseY < p.height;
-        if (!pressedInCanvas) {
-            return;
-        }
-
-        menorNotas = {
-            1: 0,
-            2: 0,
-            3: 0,
-        };
-
+		let pressedInCanvas = p.mouseX > 0 &&
+		p.mouseX < p.width &&
+		p.mouseY > 0 &&
+		p.mouseY < p.height;
+		if (!pressedInCanvas) {
+			return;
+		}
+		
+		menorNotas = {
+			1: 0,
+			2: 0,
+			3: 0,
+		};
+		
 		for (let i = 0; i < 10; i++) {
 			alun[i] = new StudentInfo(
 				i + 1,
@@ -130,7 +105,7 @@ const execexam = ( p ) => {
 			this.n3 = n3;
 			this.menornota = 0;
 			this.media = (n1 + n2 + n3) / 3;
-            let mi = p.min(n1, n2, n3);
+			let mi = p.min(n1, n2, n3);
 			if (this.n1 == mi) {
 				this.menornota = 1;
 			} else if (this.n2 == mi) {
