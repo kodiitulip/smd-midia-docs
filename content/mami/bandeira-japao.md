@@ -15,7 +15,7 @@ Okay então, aqui está nosso objetivo de hoje!
   
 vamos primeiro a como vamos fazer a bandeira do Japão:  
 
-![[japao.png | center]]
+![[japao.png|Um desenho com as medidas necessárias para fazer uma bandeira do Japão proporcional | center]]
 
 Como podemos ver a bandeira está dividida em _módulos_.  
 Você pode ver que a largura da bandeira se encontra como 3 unidades e a altura se encontra com 2 unidades.  
@@ -53,7 +53,7 @@ function desenharBandeira() {
 
 Agora devemos ver algo assim:  
 
-<div class="sketch-holder" id="flags-rect"></div>
+![[canvas-rect.png|Um retângulo branco no canto da image | center]]
 
 _caso as imagens não estejam aparecendo por favor recarregue a página_
 
@@ -76,7 +76,7 @@ function desenharBandeira() {
 }
 ```
 
-<div class="sketch-holder" id="flags-circle"></div>
+![[canvas-circle.png|A bandeira do Japão no canto da imagem | center]]
 
 _caso as imagens não estejam aparecendo por favor recarregue a página_
 
@@ -135,7 +135,7 @@ function draw() {
 nosso desenho deve estar assim:
 
 
-<div class="sketch-holder" id="flags-param"></div>
+![[canvas-param.png| Uma bandeira do Japão no centro da imagem | center]]
 
 _caso as imagens não estejam aparecendo por favor recarregue a página_
 
@@ -158,7 +158,7 @@ function draw() {
 }
 ```
 
-<div class="sketch-holder" id="flags-tomany"></div>
+![[canvas-tomany.png|Cem bandeiras do Japão alinhadas em um grid 10 x 10 | center]]
 
 _caso as imagens não estejam aparecendo por favor recarregue a página_
 
