@@ -3,33 +3,29 @@
 // put your custom CSS here!
 img[alt~=center] {
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     display: block;
     margin: 1rem auto;
 }
 
 .sketch-frame {
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 1rem auto;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
     min-height: min-content;
     min-width: min-content;
 }
 
 .sketch-holder {
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    margin: 1rem auto;
+    border-radius: 1rem;
+    display: grid;
+    place-items: center;
     min-height: min-content;
     min-width: min-content;
 }
 
 .p5Canvas{
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 1rem;
     display: block;
 }

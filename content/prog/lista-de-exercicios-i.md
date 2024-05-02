@@ -9,7 +9,7 @@ tags:
 <script src="./ExecI/exec-stars.js"></script>
 <script src="./ExecI/exec-fibonacci.js"></script>
 <script src="./ExecI/exec-exam.js"></script>
-
+<script src="./ExecI/exec-factory.js"></script>
 # Lista de atividades Programação:
 
 ## 1. VAR, LET, CONST
@@ -73,9 +73,31 @@ circle(), ellipse(), arc()
 <div class="sketch-holder" id="exec-fibonacci"></div>
 
 ## 9. Notas
+
 >Um professor decidiu criar um programa em que possa inserir as notas de seus alunos em uma matrix 10 x 3, onde cada linha representa um aluno e cada coluna representa uma prova.
 >O próprio programa insere as notas e, depois, deve gerar um relatório detalhado indicando, para cada aluno, em qual prova ele obteve a menor nota e qual sua média final.
 >Além disso, ao final do relatório, o sistema deve fornecer informações sobre quantos alunos tiveram a menor nota em cada uma das 3 provas.
 
 <div class="sketch-holder" id="exec-exam"></div>
 
+## 10.Fábrica de Brinquedos
+
+>Uma fábrica de brinquedos deseja calcular o salário mensal de seus funcionários com base na quantidade de brinquedos produzidos. Os funcionários são divididos em três categorias, de acordo com sua produtividade:
+> - Categoria 1: Funcionários que produzem até 100 brinquedos por mês.
+> - Categoria 2: Funcionários que produzem de 101 a 200 brinquedos por mês. 
+> - Categoria 3: Funcionários que produzem mais de 200 brinquedos por mês. 
+> 
+>O salário dos funcionários é calculado da seguinte forma:
+> - Funcionários da Categoria 1 recebem um salário fixo de R$1000,00. 
+> - Funcionários da Categoria 2 recebem um salário base de R$1200,00 mais um adicional de R$2,00 por brinquedo produzido acima de 100. 
+> - Funcionários da Categoria 3 recebem um salário base de R$1500,00 mais um adicional de R$3,00 por brinquedo produzido acima de 200.
+> 
+>Escreva um programa que receba o número de funcionários de cada categoria, o número de brinquedos produzidos por cada funcionário e calcule e exiba:
+>- O salário total da fábrica. 
+>- O número total de brinquedos produzidos no mês. 
+>- O número médio de brinquedos produzidos por funcionário em cada categoria. 
+>- O número do funcionário com o maior salário.
+> 
+>Considere que a fábrica possui 50 funcionários
+
+<div class="sketch-holder" id="exec-factory"></div>
