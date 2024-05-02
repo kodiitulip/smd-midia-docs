@@ -35,9 +35,9 @@ const execfactory = ( p ) => {
 		p.text(`Salário total: R$${salTotal.toFixed(2)}
 Brinquedos fabricados: ${brinqTotal}
 Média de salários:
-Categoria 1: R$${cate1m.toFixed(2)}
-Categoria 2: R$${cate2m.toFixed(2)}
-Categoria 3: R$${cate3m.toFixed(2)}
+Categoria 1: R$${cate1m.toFixed(2)}  #Funcionários: ${cate1.length}
+Categoria 2: R$${cate2m.toFixed(2)}  #Funcionários: ${cate2.length}
+Categoria 3: R$${cate3m.toFixed(2)}  #Funcionários: ${cate3.length}
 Funcionário com maior salário: Funcionário#${maiorSal} com R$${maiorSalNumb.toFixed(2)}`, 0, 0, w, h);
 		p.translate(-x, -y);
 		p.pop();
